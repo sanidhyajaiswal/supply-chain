@@ -48,17 +48,16 @@ export default ({
           </div>
           <div className="max-w-sm mx-auto py-3 space-y-3 text-center">
             <h4 className="text-lg font-medium text-gray-800">
-              Track product, Create Shipment
+              Create Shipment
             </h4>
             <p className="text-[15px] text-gray-600">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Add shipment details to create a shipment.
             </p>
             <form onSubmit={(e) => e.preventDefault()}>
               <div className="relative mt-3">
                 <input
                   type="text"
-                  placeholder="receiver"
+                  placeholder="Receiver"
                   className="w-full pl-5 pr-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                   onChange={(e) =>
                     setShipment({
@@ -71,7 +70,7 @@ export default ({
               <div className="relative mt-3">
                 <input
                   type="date"
-                  placeholder="pickupTime"
+                  placeholder=""
                   className="w-full pl-5 pr-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                   onChange={(e) =>
                     setShipment({
@@ -84,7 +83,7 @@ export default ({
               <div className="relative mt-3">
                 <input
                   type="text"
-                  placeholder="distance"
+                  placeholder="Destination"
                   className="w-full pl-5 pr-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                   onChange={(e) =>
                     setShipment({
@@ -97,7 +96,7 @@ export default ({
               <div className="relative mt-3">
                 <input
                   type="text"
-                  placeholder="price"
+                  placeholder="Price"
                   className="w-full pl-5 pr-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                   onChange={(e) =>
                     setShipment({

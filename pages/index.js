@@ -9,6 +9,7 @@ import {
   CompleteShipment,
   GetShipment,
   StartShipment,
+  UpdateShipment
 } from "../Components/index";
 import { TrackingContext } from "../Conetxt/TrackingContext";
 
@@ -20,6 +21,7 @@ const index = () => {
     completeShipment,
     getShipment,
     startShipment,
+    updateShipment,
     getShipmentsCount,
   } = useContext(TrackingContext);
 
@@ -27,6 +29,7 @@ const index = () => {
   const [createShipmentModel, setCreateShipmentModel] = useState(false);
   const [openProfile, setOpenProfile] = useState(false);
   const [startModal, setStartModal] = useState(false);
+  const [updateModal, setUpdateModal] = useState(false);
   const [completeModal, setCompleteModal] = useState(false);
   const [getModel, setGetModel] = useState(false);
   //DATA STATE VARIABLE
@@ -48,6 +51,8 @@ const index = () => {
         setCompleteModal={setCompleteModal}
         setGetModel={setGetModel}
         setStartModal={setStartModal}
+        setUpdateModal={setUpdateModal}
+        setCreateShipmentModel={setCreateShipmentModel}
       />
 
       <Table
@@ -79,6 +84,11 @@ const index = () => {
         startModal={startModal}
         setStartModal={setStartModal}
         startShipment={startShipment}
+      />
+      <UpdateShipment
+        updateModal={updateModal}
+        setUpdateModal={setUpdateModal}
+        updateShipment={updateShipment}
       />
     </>
   );

@@ -1,4 +1,4 @@
-export default ({ setCreateShipmentModel, allShipmentsdata }) => {
+export default ({ allShipmentsdata }) => {
   const converTime = (time) => {
     const newTime = new Date(time);
     const dataTime = new Intl.DateTimeFormat("en-US", {
@@ -33,15 +33,6 @@ export default ({ setCreateShipmentModel, allShipmentsdata }) => {
           </h3>
           <p className="text-gray-600 mt-2">
             Real-Time Tracking for your shipments.
-          </p>
-        </div>
-        <div className="mt-3 md:mt-0">
-          <p
-            onClick={() => setCreateShipmentModel(true)}
-            href="javascript:void(0)"
-            className="inline-block px-4 py-2 text-white duration-150 font-medium bg-gray-800 hover:bg-gray-700 active:bg-gray-900 md:text-sm rounded-lg md:inline-flex"
-          >
-            Add Tracking
           </p>
         </div>
       </div>
